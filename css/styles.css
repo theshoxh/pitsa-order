@@ -1,0 +1,57 @@
+
+body{
+  background-image: url(../img/background\ pizza.jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+}
+
+main{
+  background-color: rgba(245, 222, 179, 0.514);
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+
+.circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background-color: coral;
+}
+
+.radio-input:checked + .circle {
+  background-color: coral;
+}
+
+.label-ingredient {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: 45%;
+  margin-top: 10px;
+}
+
+.ingredient-checkbox:checked +.ingredient-span {
+  background-color: tomato;
+}
+
+.ingredient-span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.ingredient-span:hover {
+  background-color: rgb(211, 164, 156);
+}
